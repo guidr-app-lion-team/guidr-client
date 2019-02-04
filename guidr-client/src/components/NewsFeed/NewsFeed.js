@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import TripCard from './TripCard'
-import Logo from '../../imgs/mocklogo2.0.png'
+import Logo from '../../imgs/adventure-title.png'
 
 export default function NewsFeed() {
   return (
