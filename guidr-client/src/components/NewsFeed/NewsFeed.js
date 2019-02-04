@@ -30,7 +30,7 @@ export default function NewsFeed() {
         <div className="mx-2 bg-green-dark text-white px-2 py-1 rounded tracking-wide hover:bg-green-darker">Scuba Diving</div>
       </div>
       {/* CARDS */}
-      <section className="flex flex-wrap justify-center mt-8">
+      <section className="flex flex-wrap justify-around mt-8">
         {/* props.newsfeed.map(item => return <TripCard newpost="item" />) */}
         <TripCard />
         <TripCard />

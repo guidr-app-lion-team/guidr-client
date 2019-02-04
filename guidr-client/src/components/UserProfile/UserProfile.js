@@ -20,9 +20,11 @@ export default function UserProfile() {
           <div className="w-1/2 flex px-4 flex-col justify-center items-center h-pro-image">
             <img className="rounded-lg rounded border border-8 border-white" src={ProImg} alt="" />
           </div>
-
+          
           <div className="w-1/2 px-4 flex items-center">
             <div class="bg-white w-4/5 rounded  p-4 flex flex-col justify-between leading-normal">
+            <i className="self-end far fa-edit text-xl"></i>
+            <div></div>
               <div className="flex my-2">
                 <h4 className="mr-2">Name: </h4>
                 <p>Matt Basile</p>
