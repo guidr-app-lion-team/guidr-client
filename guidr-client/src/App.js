@@ -5,6 +5,7 @@ import LandingPageView from './views/LadingPageView';
 import LoginView  from './views/LoginView';
 import NewsFeedView from './views/NewsFeedView';
 import UserProfileView from './views/UserProfileView'
+import AddTripView from './views/AddTripView';
 
 // CSS
 import './App.css';
@@ -17,6 +18,7 @@ class App extends Component {
         <Route path="/login" component={LoginView}/>
         <Route path="/newsfeed" component={NewsFeedView}/>
         <Route path="/user/:id" component={UserProfileView}/>
+        <Route path="/addTrip" component={AddTripView}/>
       </div>
     );
   }
