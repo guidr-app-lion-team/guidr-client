@@ -1,0 +1,20 @@
+.login-screen{
+  background: url('../src/imgs/Login-bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+.add-trip-bg{
+  background: url('../src/imgs/addteam-bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.feed-bg{
+  background: url('../src/imgs/newsfeed-bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.h-pro-header{
+  height: 500px;
+}
+.h-pro-image{
+  height: 400px;
+}
