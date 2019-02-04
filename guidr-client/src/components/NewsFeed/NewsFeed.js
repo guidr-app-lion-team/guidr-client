@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
 import TripCard from './TripCard';
+import Logo from '../../imgs/mocklogo2.0.png'
 
 export default function NewsFeed() {
   return (
@@ -13,7 +14,10 @@ export default function NewsFeed() {
           <Link className="no-underline mx-4 text-lg text-red hover:text-red-darker" to={'/login'}>Logout</Link>
         </nav>
         {/* TITLE */}
-        <h1 className="text-center text-5xl my-8">Guidr</h1>
+        <div className="h-64 flex items-center justify-center feed-bg">
+          {/* <h1 className="text-center text-5xl my-8">Guidr</h1> */}
+          <img src={Logo} alt=""/>
+        </div>
       </header>
       {/* FILTER BAR */}
       <div className="filter w-full flex justify-center h-12 border border-blue items-center ">

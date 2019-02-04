@@ -2,7 +2,7 @@ import React from 'react'
 
 const AddTrip = () => {
   return (
-    <div className="w-2/5  mx-auto flex flex-col justify-center h-screen ">
+    <div className="w-2/5 my-8 mx-auto flex flex-col justify-center h-screen ">
       <form  onSubmit={()=>console.log(`submitting`)}className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
       <h1 className="text-2xl">Add an Adventure!</h1>
         <div className="my-4">

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 export default function TripCard() {
   return (
     
@@ -12,7 +12,7 @@ export default function TripCard() {
             
             <div class="flex items-center mt-4">
             <div class="text-sm">
-                <p class="text-black leading-none">MattyHikes778</p>
+                <Link to='/user/:id' class="text-black leading-none">MattyHikes778</Link>
                 <p class="text-grey-dark">July 20th, 2018</p>
             </div>
             </div>

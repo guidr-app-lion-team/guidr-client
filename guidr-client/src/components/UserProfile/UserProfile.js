@@ -8,7 +8,7 @@ export default function UserProfile() {
     <>
     <div>
        <nav className="w-full flex justify-end h-12 border border-blue items-center  ">
-          <Link className="no-underline mx-2 text-lg text-green-dark hover:text-green-darker" to={'/user/:id'}>TripsFeed</Link>
+          <Link className="no-underline mx-2 text-lg text-green-dark hover:text-green-darker" to={'/newsfeed'}>AdventureFeed</Link>
           <Link className="no-underline mx-2 text-lg text-green-dark hover:text-green-darker" to={'/addTrip'}>Add Trip</Link>
           {/* <span className="text-green "> | </span> */}
           <Link className="no-underline mx-4 text-lg text-red hover:text-red-darker" to={'/login'}>Logout</Link>
