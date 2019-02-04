@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
+import NewsFeed from '../components/NewsFeed'
 
 export class NewsFeedView extends Component {
 //   static propTypes = {
@@ -10,7 +11,7 @@ export class NewsFeedView extends Component {
   render() {
     return (
       <div>
-        <h2>NewsFeedView</h2>
+        <NewsFeed />
       </div>
     )
   }

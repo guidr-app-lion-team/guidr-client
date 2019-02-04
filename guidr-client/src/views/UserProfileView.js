@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
+import UserProfile from '../components/UserProfile'
 
 export class UserProfileView extends Component {
 //   static propTypes = {
@@ -10,7 +11,7 @@ export class UserProfileView extends Component {
   render() {
     return (
       <div>
-        <h2>UserProfile</h2>
+        <UserProfile />
       </div>
     )
   }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
+import Login from '../components/Login'
 
 export class LoginView extends Component {
 //   static propTypes = {
@@ -9,8 +10,8 @@ export class LoginView extends Component {
 
   render() {
     return (
-      <div>
-        <h2>LoginView</h2>
+      <div className="w-screen login-screen">
+        <Login/>
       </div>
     )
   }

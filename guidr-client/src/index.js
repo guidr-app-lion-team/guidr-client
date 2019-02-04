@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter as Router} from "react-router-dom";
+// CSS Stylings
 import './index.css';
+import './css/tailwind.css'
 import App from './App';
 
 // Provider/Loggers

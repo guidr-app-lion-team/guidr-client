@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
+import LandingPage from '../components/LandingPage';
+
 
 export class LadingPageView extends Component {
 //   static propTypes = {
@@ -10,7 +12,7 @@ export class LadingPageView extends Component {
   render() {
     return (
       <div>
-        <h2>LadingPageView</h2>
+       <LandingPage/>
       </div>
     )
   }
