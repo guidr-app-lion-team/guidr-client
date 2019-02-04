@@ -1,15 +1,21 @@
 import React from 'react'
+import TweenMax from "gsap/TweenMax";
+
 
 const showDescription = e => {
   e.preventDefault();
-  e.target.nextSibling.classList.toggle('hidden')
+  if(e.target.nextSibling.classList.contains('hidden')){
+    TweenMax.to(e.target.nextSibling, 1, {className: '-=hidden',  opacity: 1, })
+  } else{
+    TweenMax.to(e.target.nextSibling, .5, {className: '+=hidden', opacity: 0, })
+  }
 }
 
 export default function Trip() {
   return (
     <div className="w-full">
-      <button onClick={e => showDescription(e)} className="collapsible border border-red w-full h-12">Title - Date - Duration - Location</button>
-      <div className="hidden content border border-red">
+      <button onClick={e => showDescription(e)} className="rounded-sm bg-green-dark text-white collapsible border w-full h-12">Title   &loz;  Date   &loz;   Duration   &loz;   Location</button>
+      <div className="hidden content">
         <div class=" border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
           <div className="flex">
             <h4 className="mr-2">Title: </h4>
