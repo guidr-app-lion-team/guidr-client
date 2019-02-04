@@ -1,3 +1,10 @@
 .login-screen{
   background: url('../src/imgs/Login-bg.jpg') no-repeat center center;
 }
+
+.h-pro-header{
+  height: 600px;
+}
+.h-pro-image{
+  height: 400px;
+}
