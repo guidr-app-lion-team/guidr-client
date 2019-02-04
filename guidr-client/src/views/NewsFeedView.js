@@ -4,9 +4,9 @@ import { connect } from 'react-redux'
 import NewsFeed from '../components/NewsFeed/NewsFeed'
 
 export class NewsFeedView extends Component {
-//   static propTypes = {
-//     prop: PropTypes
-//   }
+  //   static propTypes = {
+  //     prop: PropTypes
+  //   }
 
   render() {
     return (
@@ -18,11 +18,11 @@ export class NewsFeedView extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  
+
 })
 
 const mapDispatchToProps = {
-  
+
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(NewsFeedView)
