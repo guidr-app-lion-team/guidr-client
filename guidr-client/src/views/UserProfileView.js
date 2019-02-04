@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import UserProfile from '../components/UserProfile'
+import UserProfile from '../components/UserProfile/UserProfile'
 
 export class UserProfileView extends Component {
 //   static propTypes = {
