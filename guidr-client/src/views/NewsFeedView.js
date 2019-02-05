@@ -9,8 +9,14 @@ export class NewsFeedView extends Component {
   //     prop: PropTypes
   //   }
   componentDidMount(){
-    this.props.getNewsFeed();
-    this.props.getUsers();
+     this.props.getNewsFeed()
+     
+  }
+  
+
+  logout = () => {
+    localStorage.removeItem('jwt')
+    this.props.history.push('/Login')
   }
   render() {
     console.log(this.props.users)
@@ -19,6 +25,7 @@ export class NewsFeedView extends Component {
         <NewsFeed 
         adventures={this.props.adventures}
         users={this.props.users}
+        logout={this.logout}
         />
       </div>
     )
@@ -29,7 +36,8 @@ const mapStateToProps = (state) => ({
     isFetchingFeed: state.isFetchingFeed,
     adventures: state.adventures,
     error: state.error,
-    users: state.users
+    users: state.users,
+    isLoggedIn: state.isLoggedIn
 })
 
 const mapDispatchToProps = {
