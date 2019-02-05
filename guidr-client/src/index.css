@@ -12,8 +12,12 @@
   background-size: cover;
 }
 
+
+
 .h-pro-header{
   height: 500px;
+  background: url('../src/imgs/addteam-bg.jpg') no-repeat center center;
+  background-size: cover;
 }
 .h-pro-image{
   height: 400px;
