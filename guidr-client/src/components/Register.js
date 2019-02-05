@@ -1,6 +1,8 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 
 export default function Register(props) {
+  
   return (
     <div className="w-full mx-auto flex flex-col justify-center h-screen">
       <form onSubmit={(e) => props.handleSubmit(e)} className="w-4/5 mx-auto bg-white shadow-md px-8 pt-6 mb-4 rounded">
@@ -68,10 +70,10 @@ export default function Register(props) {
       </form>
 
       <div className="flex justify-center mb-3">
-        <button className="bg-green-dark hover:bg-green-darker text-white font-bold mx-2 py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+        <button onClick={(e) => props.handleSubmit(e)} className="bg-green-dark hover:bg-green-darker text-white font-bold mx-2 py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
           Submit
         </button>
-        <button className="bg-grey hover:bg-green-darker text-white font-bold mx-2 py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+        <button onClick={e => props.clearForm(e)} className="bg-grey hover:bg-green-darker text-white font-bold mx-2 py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
           Cancel
         </button>
       </div>

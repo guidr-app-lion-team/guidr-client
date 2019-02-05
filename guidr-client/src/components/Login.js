@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import {Link} from 'react-router-dom'
+import Logo from '../imgs/mocklogo2.0.png'
 
 export default function Login() {
   return (
     <div className="w-full max-w-xs mx-auto flex flex-col justify-center h-screen ">
+    <img src={Logo} alt=""/>
       <form onSubmit={() => console.log(`submitting`)} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
         <div className="mb-4">
           <label className="block text-grey-darker text-sm font-bold mb-2 text-left" for="username">
@@ -21,9 +24,9 @@ export default function Login() {
           <button className="bg-green-dark hover:bg-green-darker text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
             Sign In
           </button>
-          <a className="inline-block align-baseline font-bold text-sm text-green-dark hover:text-green-darker" href="#">
+          <Link to={"/register"} className="inline-block align-baseline font-bold text-sm text-green-dark hover:text-green-darker" href="#">
             Need to Register?
-          </a>
+          </Link>
         </div>
       </form>
       <p className="text-center text-grey text-xs">

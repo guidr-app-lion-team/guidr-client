@@ -9,6 +9,11 @@ export const FETCH_USERS_SUCCESS = "FETCH_USERS_SUCCESS";
 export const FETCH_USERS_FAIL = "FETCH_USERS_FAIL"; 
 
 
+export const ADD_USER_START = "ADD_USER_START";
+export const ADD_USER_SUCCESS = "ADD_USER_SUCCESS";
+export const ADD_USER_FAIL = "ADD_USER_FAIL"; 
+
+
 export const getNewsFeed = () => dispatch =>{
     dispatch({type: FETCH_NEWSFEED_START});
     axios
@@ -24,4 +29,21 @@ export const getNewsFeed = () => dispatch =>{
     .catch(err => dispatch({type: FETCH_USERS_FAIL, payload: err}))
   }
 
-  
+  export const addUser = user => dispatch =>{
+    console.log(user)
+    dispatch({type: ADD_USER_START});
+    axios
+    .post(`https://guidr2.herokuapp.com/user`, user)
+    .then(res => console.log(res))
+    // .then(res => dispatch({ type: ADD_USER_SUCCESS, payload: res.data}))
+    .catch(err => dispatch({type: ADD_USER_FAIL, payload: err}))
+  }
+  // addUser = (user) => {
+  //   const token = localStorage.getItem('token')
+  //   const headers = { headers: { 'Authorization': `Token ${token}` } }
+  //   axios.post('http://127.0.0.1:8000/api/countries/', newCountry, headers)
+  //     .then(resp => this.getData())
+  //     .catch(function (error) {
+  //       console.log(error);
+  //     })
+  // }

@@ -11,7 +11,9 @@
   background: url('../src/imgs/newsfeed-bg.jpg') no-repeat center center;
   background-size: cover;
 }
-
+.trip-card{
+  width: 30%;
+}
 
 
 .h-pro-header{
