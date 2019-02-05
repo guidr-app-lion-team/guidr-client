@@ -21,11 +21,11 @@ export const USER_LOGIN_FAIL = "USER_LOGIN_FAIL";
 export const userLogin = user => dispatch =>{
   dispatch({type: USER_LOGIN_START});
   axios
-  .post(`https://guidr2.herokuapp.com/login`, user)
+  .post(`https://guidr2.herokuapp.com/user`, user)
   .then(res => {
     if (res.status === 200 && res.data) {
       dispatch({type: USER_LOGIN_SUCCESS, payload: res.data.username});
-      localStorage.setItem('jwt', res.data.token)
+      // localStorage.setItem('jwt', res.data.token)
     } else {
       throw new Error();
     }
