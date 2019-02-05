@@ -12,8 +12,8 @@ export default function TripCard(props) {
 
       <div className="flex items-center mt-4">
         <div className="text-sm">
-          <Link to='/user/:id' className="text-black leading-none">MattyHikes778</Link>
-          <p className="text-grey-dark">July 20th, 2018</p>
+          <Link to='/user/:id' className="text-black leading-none"></Link>
+          <p className="text-grey-dark">{props.adventure.date}</p>
         </div>
       </div>
     </div>

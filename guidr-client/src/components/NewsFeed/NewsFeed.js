@@ -4,7 +4,7 @@ import TripCard from './TripCard'
 import Logo from '../../imgs/adventure-title.png'
 
 export default function NewsFeed(props) {
-  console.log(props)
+  console.log(props.users)
   return (
     <div>
       <header className="w-full">
@@ -32,7 +32,7 @@ export default function NewsFeed(props) {
       </div>
       {/* CARDS */}
       <section className="flex flex-wrap justify-around mt-8">
-       {props.adventures.map(item => {return <TripCard adventure={item} />})}
+       {props.adventures.map(item => {return <TripCard user={props.users.find(user=> user.id === item.user_id )} adventure={item} />})}
         
       </section>
     </div>
