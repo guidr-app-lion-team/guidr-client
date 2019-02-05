@@ -1,5 +1,5 @@
 import React from 'react'
-import {TweenMax, Power2} from "gsap/TweenMax";
+import {TweenMax} from "gsap/TweenMax";
 
 
 const showDescription = e => {
