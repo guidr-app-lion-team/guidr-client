@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Route, withRouter} from 'react-router'
+import { Route} from 'react-router'
 //Views
 import LandingPageView from './views/LadingPageView'
 import LoginView from './views/LoginView'
@@ -12,6 +12,7 @@ import AddTripView from './views/AddTripView'
 import './App.css';
 
 class App extends Component {
+  
   render() {
     return (
       <div className="App">
