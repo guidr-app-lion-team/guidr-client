@@ -31,6 +31,7 @@ export const userLogin = user => dispatch =>{
     }
   })
   .then(getNewsFeed())
+  .then(getUsers())
   .catch(err => console.log(err))
   
 }
@@ -80,4 +81,10 @@ export const getNewsFeed = () => dispatch =>{
   //     .catch(function (error) {
   //       console.log(error);
   //     })
+  // }
+
+
+  // export const getSingleUser = user => dispatch =>{
+  //   dispatch({type: FETCH_SINGLE_USER_START});
+  //   axios.
   // }
