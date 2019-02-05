@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Route } from 'react-router'
+import { Route, withRouter} from 'react-router'
 //Views
 import LandingPageView from './views/LadingPageView'
 import LoginView from './views/LoginView'
@@ -25,6 +25,7 @@ class App extends Component {
     );
   }
 }
+
 
 export default App;
 

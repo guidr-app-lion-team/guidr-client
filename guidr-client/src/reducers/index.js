@@ -4,7 +4,10 @@ import {
   FETCH_NEWSFEED_FAIL,
   FETCH_USERS_FAIL,
   FETCH_USERS_START,
-  FETCH_USERS_SUCCESS
+  FETCH_USERS_SUCCESS,
+  ADD_USER_FAIL,
+  ADD_USER_START,
+  ADD_USER_SUCCESS
 } from '../actions'
 
 
@@ -56,6 +59,25 @@ export default (state = initialState, { type, payload }) => {
     isFetchingFeed: false,
     error: payload,
   };
+  case ADD_USER_START:
+  return{
+    ...state,
+    isAddingUser: true,
+    error: null
+  };
+  case ADD_USER_SUCCESS:
+  return{
+    ...state,
+    users: payload,
+    error:null,
+    isAddingUser: false
+  };
+  case ADD_USER_FAIL:
+  return{
+    ...state,
+    error: payload,
+    isAddingUser: false
+  }
   default:
     return state
   }
